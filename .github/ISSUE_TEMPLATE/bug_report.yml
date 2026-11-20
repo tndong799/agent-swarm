@@ -1,0 +1,71 @@
+name: 🐞 Bug report
+description: Something doesn't work or looks wrong
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! Everything here is public, so please don't include passwords, personal data or private URLs.
+        Bạn có thể viết bằng tiếng Việt.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you see, and what did you expect instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open https://example.com
+        2. Click the extension icon
+        3. …
+    validations:
+      required: false
+  - type: input
+    id: version
+    attributes:
+      label: Extension version
+      description: Shown on chrome://extensions (for example 1.6.0)
+      placeholder: "1.6.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Mode
+      options:
+        - Swarm (default)
+        - Rebuild
+        - Demolish
+        - Code Review
+        - Present
+        - Hacker movie
+        - Not sure
+    validations:
+      required: false
+  - type: input
+    id: site
+    attributes:
+      label: Website where it happened (optional)
+      description: Only if it's a public page. Leave empty for private or work pages.
+      placeholder: "https://example.com"
+    validations:
+      required: false
+  - type: input
+    id: browser
+    attributes:
+      label: Chrome version and OS
+      placeholder: "Chrome 131 on macOS 15"
+    validations:
+      required: false
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot or screen recording (optional)
+      description: Drag an image or video here. The 📸 button on the HUD saves one for you.
+    validations:
+      required: false

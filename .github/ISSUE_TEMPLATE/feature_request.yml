@@ -1,0 +1,31 @@
+name: 💡 Feature request
+description: An idea for a new mode, effect, theme or option
+title: "[Idea] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please check the [open ideas](https://github.com/tndong799/agent-swarm/issues?q=is%3Aissue+is%3Aopen+label%3Aenhancement) first. If yours is there, add a 👍 to it instead.
+        Bạn có thể viết bằng tiếng Việt.
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like the swarm to do?
+      placeholder: "A mode where the agents …"
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: When would you use it?
+      description: Streams, demos, screen recordings, pranking coworkers… Knowing the "why" helps a lot.
+    validations:
+      required: false
+  - type: textarea
+    id: reference
+    attributes:
+      label: Reference (optional)
+      description: A sketch, a video, a movie scene, another app that does something similar.
+    validations:
+      required: false
